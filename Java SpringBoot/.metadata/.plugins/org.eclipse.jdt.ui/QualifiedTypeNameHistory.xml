@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowire"/>
     <fullyQualifiedTypeName name="com.destkbo.ppmtool.services.ProjectService"/>
     <fullyQualifiedTypeName name="javax.validation.constraints.Size"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonFormat"/>
@@ -11,7 +10,6 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ExceptionHandler"/>
     <fullyQualifiedTypeName name="org.springframework.web.context.request.WebRequest"/>
     <fullyQualifiedTypeName name="com.destkbo.ppmtool.exceptions.ProjectIdException"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.DeleteMapping"/>
     <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
     <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
     <fullyQualifiedTypeName name="javax.persistence.Entity"/>
@@ -33,7 +31,6 @@
     <fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="com.destkbo.ppmtool.repositories.BacklogRepository"/>
-    <fullyQualifiedTypeName name="com.destkbo.ppmtool.domain.Backlog"/>
     <fullyQualifiedTypeName name="com.destkbo.ppmtool.repositories.ProjectTaskRepository"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
@@ -41,22 +38,26 @@
     <fullyQualifiedTypeName name="com.destkbo.ppmtool.services.ProjectTaskService"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
     <fullyQualifiedTypeName name="javax.validation.Valid"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
     <fullyQualifiedTypeName name="org.springframework.validation.BindingResult"/>
     <fullyQualifiedTypeName name="com.destkbo.ppmtool.services.MapValidationErrorService"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonIgnore"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
-    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.lang.Iterable"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseStatus"/>
-    <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="com.destkbo.ppmtool.exceptions.ProjectNotFoundExceptionResponse"/>
     <fullyQualifiedTypeName name="com.destkbo.ppmtool.domain.Project"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="com.destkbo.ppmtool.repositories.ProjectRepository"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+    <fullyQualifiedTypeName name="com.destkbo.ppmtool.domain.Backlog"/>
     <fullyQualifiedTypeName name="com.destkbo.ppmtool.exceptions.ProjectNotFoundException"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PatchMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.DeleteMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+    <fullyQualifiedTypeName name="org.springframework.http.StreamingHttpOutputMessage.Body"/>
     <fullyQualifiedTypeName name="com.destkbo.ppmtool.domain.ProjectTask"/>
 </qualifiedTypeNameHistroy>
