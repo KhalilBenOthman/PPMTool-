@@ -1,4 +1,5 @@
 package com.destkbo.ppmtool.web;
+import java.security.Principal;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -35,33 +36,33 @@ public class ProjectController {
 	private MapValidationErrorService mapValidationErrorServices;
 	
 	@PostMapping("")
-	public ResponseEntity<?> creatNewProject(@Valid @RequestBody Project project, BindingResult result){
+	public ResponseEntity<?> creatNewProject(@Valid @RequestBody Project project, BindingResult result, Principal principal){
 		
 		ResponseEntity<?> errorMap = mapValidationErrorServices.MapValidationService(result);
 		if(errorMap != null) return errorMap;
 
 		
 		
-		Project project1 = projectService.saveOrUpdateProject(project);
+		Project project1 = projectService.saveOrUpdateProject(project, principal.getName());
 		return new ResponseEntity<Project>(project, HttpStatus.CREATED);
 	}
 	
 	
 	@GetMapping("/{projectId}")
-	public ResponseEntity<?> getProjectById(@PathVariable String projectId){
-		Project project = projectService.findProjectByIdentifier(projectId);
+	public ResponseEntity<?> getProjectById(@PathVariable String projectId,Principal principal){
+		Project project = projectService.findProjectByIdentifier(projectId,principal.getName());
 		return new ResponseEntity<Project>(project,HttpStatus.OK);
 	}
 	
 	
 	@GetMapping("/all")
-	public Iterable<Project> getAllProject(){
-		return projectService.findAllProjects();
+	public Iterable<Project> getAllProject(Principal principal){
+		return projectService.findAllProjects(principal.getName());
 	}
 	
 	@DeleteMapping("/{projectId}")
-	public ResponseEntity<?> deleteProject(@PathVariable String projectId){
-		projectService.deleteProjectByIdentifier(projectId);
+	public ResponseEntity<?> deleteProject(@PathVariable String projectId,Principal principal){
+		projectService.deleteProjectByIdentifier(projectId,principal.getName());
 		return new ResponseEntity<String>("Project with Id'"+projectId+"' was deleted",HttpStatus.OK);
 	}
 	
