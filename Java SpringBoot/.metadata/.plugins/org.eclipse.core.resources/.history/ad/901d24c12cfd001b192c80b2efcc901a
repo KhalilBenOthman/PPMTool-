@@ -10,12 +10,10 @@
 ###spring.jpa.show-sql: true
 ###spring.jpa.hibernate.ddl-auto=update
 
-
-#spring.datasource.url=jdbc:postgresql://localhost:5432/ppmtproject
-spring.datasource.url=jdbc:postgresql://ec2-54-78-36-245.eu-west-1.compute.amazonaws.com:5432/djqe21rt8qbl0
-spring.datasource.username=tyabrvgnjdqwwk
-spring.datasource.password=5c9a05517783358c356866e1806e6ff18ea5b47788afe11b39479ba19f73e67e
-#spring.jpa.show-sql: true
+spring.datasource.url=jdbc:postgresql://localhost:5432/ppmtproject
+spring.datasource.username=postgres
+spring.datasource.password=root
+spring.jpa.show-sql: true
 
 
 
